@@ -48,7 +48,7 @@ public class store {
 	}
 	@Keyword
 	public void importProduct(String product_file, String storename) {
-		String full_url=storename+".myshopify.com/admin/products"
+		String full_url="admin.shopify.com/store/"+storename+"/products"
 		println full_url
 		WebUI.navigateToUrl(full_url)
 		//WebUI.click(findTestObject('Object Repository/Shopify/span_product'))
@@ -127,6 +127,7 @@ public class store {
 	}
 	@Keyword
 	public void clickOnShopifyUserCard() {
+		WebUI.waitForPageLoad(40, FailureHandling.OPTIONAL)
 		WebUI.click(findTestObject('Object Repository/Shopify/div_user_card_name'),FailureHandling.OPTIONAL)
 	}
 	@Keyword

@@ -86,7 +86,7 @@
       <name>partner_password</name>
    </variable>
    <variable>
-      <defaultValue>'huynh-ar-stag-2401191231'</defaultValue>
+      <defaultValue>'huynh-ar-stag-540119123122'</defaultValue>
       <description></description>
       <id>18aa5f62-77a8-4eaa-a3d0-50a958f9362a</id>
       <masked>false</masked>

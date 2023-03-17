@@ -6,12 +6,12 @@
    <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'huynh@firegroup.io'</initValue>
+      <initValue>'huynh+1@fireapps.vn'</initValue>
       <name>shopify_email</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'khungdien'</initValue>
+      <initValue>'@KHUNGdien'</initValue>
       <name>shopify_password</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
