@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "AC0AB30AB835DF78D01A732FF71CBB60",
+  "keywordClasses": [
+    {
+      "name": "kms.turing.katalon.plugins.helper.FileHelper",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

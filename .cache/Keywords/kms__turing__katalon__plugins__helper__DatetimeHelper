@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "4BB4A2525B7FD48D640D978BC8BC80D4",
+  "keywordClasses": [
+    {
+      "name": "kms.turing.katalon.plugins.helper.DateTimeHelper",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

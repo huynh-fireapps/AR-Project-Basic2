@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "1722BE79B9CCD022303709D7311C0F9F",
+  "keywordClasses": [
+    {
+      "name": "kms.turing.katalon.plugins.common.ErrorHandler",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

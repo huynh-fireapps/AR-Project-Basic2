@@ -1,0 +1,21 @@
+{
+  "keywordFileContentHash": "CB9A3A862A104EC62F95588969129EEA",
+  "keywordClasses": [
+    {
+      "name": "database.postgres",
+      "keywordMethods": [
+        {
+          "name": "connect",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "update",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

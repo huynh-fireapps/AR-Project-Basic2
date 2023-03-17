@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Charge Plan Essential</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f9ae2c7b-6f1f-43b3-86f0-a93ffcbaba88</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>46274965-0f3c-4018-bb1d-c2729f147d14</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'huynh-ar-stag-1911'</defaultValue>
+      <description></description>
+      <id>46274965-0f3c-4018-bb1d-c2729f147d14</id>
+      <masked>false</masked>
+      <name>store_name</name>
+   </variable>
+</TestCaseEntity>
