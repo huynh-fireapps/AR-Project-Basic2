@@ -6,7 +6,7 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://ar-app-uat.fireapps.tech/'</initValue>
+      <initValue>'https://ar-app-staging.fireapps.tech/'</initValue>
       <name>host</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

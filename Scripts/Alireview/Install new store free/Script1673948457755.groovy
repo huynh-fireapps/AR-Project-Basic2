@@ -25,7 +25,6 @@ CustomKeywords.'alireview.install.inputRawDomain'(store_name, GlobalVariable.hos
 
 CustomKeywords.'shopify.store.clickOnShopifyUserCard'()
 CustomKeywords.'alireview.install.installStep1'()
-CustomKeywords.'shopify.store.clickOnShopifyUserCard'()
 
 CustomKeywords.'alireview.install.onboardingSelectColor'(color)
 

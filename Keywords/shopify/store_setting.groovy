@@ -25,7 +25,7 @@ public class store_setting {
 	@Keyword
 	public void changeStoreCurrency(String currency,String store_name) {
 		WebUI.delay(10)
-		String raw_domain_admin=store_name+".myshopify.com/admin/settings/general"
+		String raw_domain_admin="admin.shopify.com/store/"+store_name+"/settings/general"
 		WebUI.navigateToUrl(raw_domain_admin)
 		WebUI.selectOptionByValue(findTestObject('Object Repository/Shopify Store/select_currency'), currency, false)
 	}
@@ -36,11 +36,12 @@ public class store_setting {
 	@Keyword
 	public void changeStorePassword(String store_name, String password) {
 		WebUI.delay(10)
-		String raw_domain_admin=store_name+".myshopify.com/admin/online_store/preferences?tutorial=unlock"
+		String raw_domain_admin="admin.shopify.com/store/"+store_name+"/online_store/preferences?tutorial=unlock"
 		WebUI.navigateToUrl(raw_domain_admin)
 		WebUI.waitForElementNotPresent(findTestObject('Object Repository/Shopify Store/div_loading_bar'), 50)
 		WebUI.switchToDefaultContent()
 		WebUI.switchToFrame(findTestObject('Object Repository/Shopify Store/iframe_online_store'), 1)
+		WebUI.waitForPageLoad(10, FailureHandling.OPTIONAL)
 		WebUI.sendKeys(findTestObject('Object Repository/Shopify Store/input_storefront_password'), password)
 		WebUI.sendKeys(findTestObject('Object Repository/Shopify Store/input_storefront_password'), Keys.chord(Keys.ENTER))
 	}
