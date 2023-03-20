@@ -55,6 +55,7 @@ def teardownIfFailed() {
 def teardownIfPassed() {
 	
 	CustomKeywords.'data.excel.updateValueToSheet'(file_data, "store", 4, store_name, 7, "Passed")
+	pringln "test12"
 	
 }
 @com.kms.katalon.core.annotation.TearDownIfError

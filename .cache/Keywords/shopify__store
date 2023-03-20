@@ -46,7 +46,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "navigateToStoreDevelop",
@@ -64,7 +65,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "inputStoreName",
@@ -82,11 +84,13 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "clickCreateStore",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "importProduct",
@@ -117,15 +121,18 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "clickOnMenuOnlineStore",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "clickOnImportTheme",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "uploadThemeFile",
@@ -143,19 +150,23 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "connectFromGithub",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "clickPublishTheme",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "confirmPublishTheme",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "loginStore",
@@ -199,7 +210,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "innstallThemeShopifyViaUrl",
@@ -230,11 +242,13 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "clickOnShopifyUserCard",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "loginToStoreAdmin",
@@ -278,10 +292,11 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         }
       ]
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

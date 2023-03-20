@@ -1,6 +1,4 @@
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
@@ -17,13 +15,14 @@ import internal.GlobalVariable
 import org.apache.poi.xssf.usermodel.XSSFSheet
 import org.apache.poi.xssf.usermodel.XSSFWorkbook
 import com.kms.katalon.core.annotation.BeforeTestCase
+import com.kms.katalon.core.annotation.BeforeTestDataBindToTestCase
 import com.kms.katalon.core.annotation.BeforeTestSuite
 import com.kms.katalon.core.annotation.SetupTestCase
 import com.kms.katalon.core.annotation.AfterTestCase
 import com.kms.katalon.core.annotation.AfterTestSuite
 import com.kms.katalon.core.context.TestCaseContext
 import com.kms.katalon.core.context.TestSuiteContext
-
+import com.kms.katalon.core.testdata.TestDataFactory
 class NewTestListener {
 	/**
 	 * Executes after every test case ends.
@@ -49,6 +48,7 @@ class NewTestListener {
 		Map<String, Object> map = testCaseContext.getTestCaseVariables()
 		String testcae_status = map.get("testcase_status")
 		println testcae_status
+		
 		if(testcae_status=='Passed' || testcae_status=='Failed' ) {
 			testCaseContext.skipThisTestCase()
 		}
@@ -85,5 +85,18 @@ class NewTestListener {
 	ExcelKeywords.setValueToCellByIndex(sheet1, rowIndex, 0, ContractNumber)
 	ExcelKeywords.setValueToCellByIndex(sheet1, rowIndex, 1, PassFail + " - " + ErrorMsg)
 	ExcelKeywords.saveWorkbook(accexcel, workbook1)
+	}
+	@BeforeTestDataBindToTestCase
+	def beforeTestSuite(TestSuiteContext testSuiteContext,TestCaseContext testCaseContext) {
+		println "BeforeTestDataBindToTestCase"
+		println "SuiteID: "+testSuiteContext.getTestSuiteId()
+		//println TestDataFactory.findTestData("storefree3_install app stag.xlsx").sourceUrl
+		println TestDataFactory.getProjectDir()
+		println TestDataFactory.getTestDataId()
+		println TestDataFactory.PROPERTIES
+		println "CaseID: "+testCaseContext.getTestCaseId()
+		println "End BeforeTestDataBindToTestCase"
+		
+		
 	}
 }
